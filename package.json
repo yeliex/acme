@@ -1,0 +1,43 @@
+{
+  "name": "acmejs",
+  "version": "0.0.1",
+  "description": "javascript implement for rfc8555 (ACME)",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "plugin/*"
+  ],
+  "scripts": {
+    "build": "npx lerna run build",
+    "test:type": "npx lerna run test:type",
+    "test:unit": "jest --coverage",
+    "test": "npm run test:type && npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/acme.git"
+  },
+  "keywords": [
+    "acme",
+    "rfc8555",
+    "letsencrypt"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/yeliex/acme/issues"
+  },
+  "homepage": "https://github.com/yeliex/acme#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^26.0.14",
+    "@types/lodash": "^4.14.161",
+    "@types/node": "^14.10.1",
+    "husky": "^4.3.0",
+    "jest": "^26.5.2",
+    "lerna": "^3.22.1",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
